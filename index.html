@@ -1,0 +1,232 @@
+<!doctype html>
+<html class="no-js" lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eddie Lacy | Official Site</title>
+    <link rel="stylesheet" href="css/foundation.css">
+    <link rel="stylesheet" href="css/app.css">
+  </head>
+  <body>
+    <header>
+      <img id="fadeLogo" alt="Logo" src="img/logo.png" class="hide-for-medium-only hide-for-small-only">
+      <nav id="fadeNav" class="hide-for-large-only">
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+          <li><a href="#career">Career</a></li>
+          <li><a href="#news">News</a></li>
+        </ul>
+      </nav>
+      <div id="mySideNav" class="sidenav hide-for-large">
+        <a href="javascript:void(0)" class="closebtnNav" >&times;</a>
+        <a href="#home" id="mLink1" class="mobileLink">Home</a>
+        <a href="#gallery" id="mLink2" class="mobileLink">Gallery</a>
+        <a href="#career" id="mLink3" class="mobileLink">Career</a>
+        <a href="#news" id="mLink4" class="mobileLink">News</a>
+    </div>
+    <img id="opener" src="img/hamburgerIcon.png" alt="Menu Open Button" class="hide-for-large">
+    </header>
+    <a name="home"></a>
+    <section id="splash">
+      <div id="splashContainer" class="grid-x">
+        <div id="logoContainer" class="large-2 medium-3 small-4 cell">
+          <img id="logo" src="img/logo.png" alt="Logo">
+        </div>
+        <div id="splashLinksContainer" class="large-6 large-offset-4 hide-for-medium-only hide-for-small-only cell">
+          <a class="sliding-middle-out-first" href="#home"><p id="firstLink">Home</p></a>
+          <a class="sliding-middle-out" href="#gallery"><p>Gallery</p></a>
+          <a class="sliding-middle-out" href="#career"><p>Career</p></a>
+          <a class="sliding-middle-out" href="#news"><p>News</p></a>
+        </div>
+        <div id="titleContainer" class="large-4 large-offset-6 medium-4 medium-offset-7 small-4 small-offset-7 cell">
+          <h2>EDDIE<br>LACY</h2>
+          <p>OFFICIAL WEBSITE</p>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div id="emailBar">
+        <h2>Sign Up For My Newsletter!</h2>
+        <form class="grid-x" action="contact.php" method="post">
+          <input type="text" id="email" name ="email" placeholder="Email Address" class="large-4 medium-4 small-4 cell">
+          <input type="text" id="birthday" name = "birthday" placeholder="Birthday (MM/DD/YYYY)" class="large-4 medium-4 small-4 cell">
+          <input type="submit" id="button" value="Sign Up" class="large-2 large-offset-1 medium-2 medium-offset-1 small-2 small-offset-1 cell">
+        </form>
+      </div>
+    </section>
+    <section id="vSection">
+      <h2 class="hidden">Eddie Lacy Highlight Reel</h2>
+      <div id="videoContainer">
+        <video poster="img/poster.png" >
+          <source src="assets/heyvideo.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+        <div id="controlsContainer" class="grid-x">
+          <div class="small-3 large-2 cell">
+          	<button id="playBt"  class="pPause controls" value="Pause">Play</button>
+          </div>
+          <div class="small-3 large-2 large-offset-1 cell">
+          	<button id="volDown" class="controls">Vol Down</button>
+          </div>
+          <div class="small-3 large-2 large-offset-1 cell">
+          	<button id="volUp" class="controls">Vol Up</button>
+          </div>
+          <div class="small-3 large-2 large-offset-1 cell">
+          	<button id="replay" class="controls">Replay</button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section>
+      <a name="career"></a>
+      <h2 class="banner">Career</h2>
+      <div id="timelineContainer">
+        <div id="timelineBanner" class="grid-x">
+          <h3 class="hidden">Position and Team</h3>
+          <div id="bannerInfo" class="large-4 large-offset-7 medium-4 medium-offset-7 small-8 small-offset-2 cell">
+            <p class="bText">EDDIE <br> LACY</p>
+            <p class="bText">ALL-PRO RB</p>
+            <p id="teamT">TEAM: </p>
+            <img src="img/seahawks.png" alt="Seattle Seahawks Logo" id="teamLogo">
+          </div>
+        </div>
+        <div class="grid-x">
+          <h2 class="hidden">Yearly Stats</h2>
+          <div class="large-3 medium-3 small-6 cell">
+            <div class="stat">
+              <h3>ATT:</h3>
+              <p class="changeling" id="c1">56</p>
+            </div>
+          </div>
+          <div class="large-3 medium-3 small-6 cell">
+            <div class="stat">
+              <h3>YARDS:</h3>
+              <p class="changeling" id="c2">424</p>
+            </div>
+          </div>
+          <div class="large-3 medium-3 small-6 cell">
+            <div class="stat">
+              <h3>RECEPTIONS:</h3>
+              <p class="changeling" id="c3">2</p>
+            </div>
+          </div>
+          <div class="large-3 medium-3 small-6 cell">
+            <div class="stat">
+              <h3>TD:</h3>
+              <p class="changeling" id="c4">6</p>
+            </div>
+          </div>
+        </div>
+        <div id="yearsContainer">
+          <div class="blueLine bookEndLine"></div>
+          <div class="year" id="prevYear">2009</div>
+          <div class="blueLine"></div>
+          <div class="year" id="mainYear">2010</div>
+          <div class="blueLine"></div>
+          <div class="year" id="nextYear">2011</div>
+          <div class="blueLine bookEndLine" id="lastLine"></div>
+        </div>
+        <div id="yearsSubhead">
+          <div class="subheadBox" id="sb1">ROOKIE YEAR</div>
+          <div class="subheadBox" id="sb2">CRIMSON TIDE</div>
+          <div class="subheadBox" id="sb3">AMONG THE ELITE</div>
+        </div>
+        <div id="verticalLine"></div>
+        <div id="yearText">
+          <h3 id="yearHeader">Roll Tide</h3>
+          <p id="innerYear">In 2010, Lacy earned his spot as the third-string tailback behind Ingram and Richardson. In the season opener against San Jose State, Lacy ran for 113 yards and two touchdowns in his collegiate debut. For the 2010 season, Lacy finished with 406 yards rushing on 56 carries, an average of 7.25 yards per carry, and six touchdowns.</p>
+        </div>
+      </div>
+    </section>
+    <section>
+      <a name="gallery"></a>
+      <h2 class="banner">Gallery</h2>
+      <div id="photoContainer">
+        <div id="photos">
+          <a class="lightbox" href="work1.html"><img id ="0" src="img/ed0.jpg" alt="football image" class="fb"></a>
+          <a class="lightbox" href="#lbt"><img id ="1" src="img/ed1.jpg" alt="football image" class="fb"></a>
+          <a class="lightbox" href="#lbt"><img id ="2" src="img/ed2.jpg" alt="football image" class="fb"></a>
+          <a class="lightbox" href="#lbt"><img id ="3" src="img/ed3.jpg" alt="football image" class="fb"></a>
+          <a class="lightbox" href="#lbt"><img id ="4" src="img/ed4.jpg" alt="football image" class="fb"></a>
+          <a class="lightbox" href="#lbt"><img id ="5" src="img/ed5.jpg" alt="football image" class="fb"></a>
+          <a class="lightbox" href="#lbt"><img id ="6" src="img/ed6.jpg" alt="football image" class="fb"></a>
+          <a class="lightbox" href="#lbt"><img id ="7" src="img/ed7.jpg" alt="football image" class="fb"></a>
+          <a class="lightbox" href="#lbt"><img id ="8" src="img/ed8.jpg" alt="football image" class="fb"></a>
+          <a class="lightbox" href="#lbt"><img id ="9" src="img/ed9.jpg" alt="football image" class="fb"></a>
+          <a class="lightbox" href="#lbt"><img id ="10" src="img/ed10.jpg" alt="football image" class="fb"></a>
+          <a class="lightbox" href="#lbt"><img id ="11" src="img/ed11.jpg" alt="football image" class="fb"></a>
+          <a class="lightbox" href="#lbt"><img id ="12" src="img/ed12.jpg" alt="football image" class="fb"></a>
+          <a class="lightbox" href="#lbt"><img id ="13" src="img/ed13.jpg" alt="football image" class="fb"></a>
+          <a class="lightbox" href="#lbt"><img id ="14" src="img/ed14.jpg" alt="football image" class="fb"></a>
+          <a class="lightbox" href="#lbt"><img id ="15" src="img/ed15.jpg" alt="football image" class="fb"></a>
+          <a class="lightbox" href="#lbt"><img id ="16" src="img/ed16.jpg" alt="football image" class="fb"></a>
+          <a class="lightbox" href="#lbt"><img id ="17" src="img/ed17.jpg" alt="football image" class="fb"></a>
+          <a class="lightbox" href="#lbt"><img id ="18" src="img/ed18.jpg" alt="football image" class="fb"></a>
+          <a class="lightbox" href="#lbt"><img id ="19" src="img/ed19.jpg" alt="football image" class="fb"></a>
+          <a class="lightbox" href="#lbt"><img id ="20" src="img/ed20.jpg" alt="football image" class="fb"></a>
+          <a class="lightbox" href="#lbt"><img id ="21" src="img/ed21.jpg" alt="football image" class="fb"></a>
+          <a class="lightbox" href="#lbt"><img id ="22" src="img/ed22.jpg" alt="football image" class="fb"></a>
+          <a class="lightbox" href="#lbt"><img id ="23" src="img/ed23.jpg" alt="football image" class="fb"></a>
+          <a class="lightbox" href="#lbt"><img id ="24" src="img/ed24.jpg" alt="football image" class="fb"></a>
+          <a class="lightbox" href="#lbt"><img id ="25" src="img/ed25.jpg" alt="football image" class="fb"></a>
+          <a class="lightbox" href="#lbt"><img id ="26" src="img/ed26.jpg" alt="football image" class="fb"></a>
+          <a class="lightbox" href="#lbt"><img id ="27" src="img/ed27.jpg" alt="football image" class="fb"></a>
+          <a class="lightbox" href="#lbt"><img id ="28" src="img/ed28.jpg" alt="football image" class="fb"></a>
+          <a class="lightbox" href="#lbt"><img id ="29" src="img/ed29.jpg" alt="football image" class="fb"></a>
+      </div>
+      <div id="lightbox">
+        <a href="javascript:void(0)" class="closebtn" >&times;</a>
+        <img src="img/ed27.jpg" alt="lightbox image" id="lightBoxImage">
+        <div id="lightboxlinkcont">
+          <a href="https://www.facebook.com/EddieLacyOfficial/" target="_blank"><img src="img/facebook.png" alt="Facebook Link" class="socialLink lightboxlink" ></a>
+          <a href="https://twitter.com/Lil_Eazy_Ana_42?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" target="_blank"><img src="img/twitter.png" alt="Twitter Link" class="socialLink lightboxlink"></a>
+          <a href="https://www.instagram.com/eddielacy/?hl=en/" target="_blank"><img src="img/instagram.png" alt="Instagram Link" class="socialLink lightboxlink"></a>
+          <a href="https://www.facebook.com/EddieLacyOfficial/" target="_blank"><img src="img/youtube.png" alt="Youtube Link" class="socialLink lightboxlink"></a>
+        </div>
+      </div>
+    </div>
+    </section>
+    <section>
+      <a name="news"></a>
+      <h2 class="banner">News</h2>
+      <div id='newsContainer' class="grid-x">
+        <div id="newsItems" class="large-5 large-offset-1 medium-5 medium-offset-1 cell">
+          <h3 id="articleTitle">Article Title</h3>
+          <img id="newsImage" src="img/news.png" alt="Article Image">
+          <p>Lacy, who carried four times for 21 yards Friday against the Chiefs, said he felt more comfortable than he has previously...<br>04/20/2017</p>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div id="secondEmailBar" class="grid-x">
+        <div id="secondEmailText" class="large-4 large-offset-1 medium-4 medium-offset-1 small-4 small-offset-1 cell">
+          <h3>Email Signup</h3>
+          <p>Be the first to know about new products and special offers!</p>
+        </div>
+        <form class="large-7 medium-7 small-7 cell grid-x" action="contact.php" method="post">
+          <input type="text" id="email2" placeholder="EMAIL ADDRESS" class="large-8 medium-8 small-8 cell">
+          <input type="submit" id="button2" value="Sign Up" class="large-3 medium-3 small-3 cell">
+        </form>
+      </div>
+      <footer>
+        <img id="fadeLogo2" alt="Logo" src="img/logo.png">
+        <a href="https://www.facebook.com/EddieLacyOfficial/" target="_blank"><img src="img/facebook.png" alt="Facebook Link" class="socialLink" id='facebookIcon'></a>
+        <a href="https://twitter.com/Lil_Eazy_Ana_42?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" target="_blank"><img src="img/twitter.png" alt="Twitter Link" class="socialLink"></a>
+        <a href="https://www.instagram.com/eddielacy/?hl=en/" target="_blank"><img src="img/instagram.png" alt="Instagram Link" class="socialLink"></a>
+        <a href="https://www.facebook.com/EddieLacyOfficial/" target="_blank"><img src="img/youtube.png" alt="Youtube Link" class="socialLink"></a>
+        <nav id="footerNav">
+          <ul>
+            <li><a>Home</a></li>
+            <li><a>Terms Of Service</a></li>
+            <li><a>Privacy Policy</a></li>
+            <li id="lastLink"><a>Contest</a></li>
+          </ul>
+        </nav>
+      </footer>
+    </section>
+    <div id="overlay"></div>
+    <script src="prod/app.min.js"></script>
+  </body>
+</html>

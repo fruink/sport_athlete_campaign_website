@@ -1,0 +1,26 @@
+{
+  "name": "eddy_lacy",
+  "version": "1.0.0",
+  "description": "Official Site for Eddy Lacy",
+  "main": "production.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://qKennedy9@bitbucket.org/xfolk5/officialize.git"
+  },
+  "keywords": [
+    "Eddy",
+    "Lacy",
+    "Football",
+    "Highlights"
+  ],
+  "author": "Jon Kennedy",
+  "license": "MIT",
+  "homepage": "https://bitbucket.org/xfolk5/officialize#readme",
+  "devDependencies": {
+    "grunt": "^1.0.1",
+    "grunt-contrib-uglify": "^3.3.0"
+  }
+}

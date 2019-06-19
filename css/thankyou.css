@@ -1,0 +1,52 @@
+body{
+  background: url(../img/splashbackground.jpg);
+  background-size:cover;
+}
+
+#thankYouContainer{
+  margin-top:8%;
+  background:rgba(255,255,255,0.7);
+  height:500;
+}
+
+#thankYouContainer p{
+  width:80%;
+  margin-left: 10%;
+  font-size:4em;
+  text-align: center;
+}
+
+#thankYouContainer h2{
+  font-size: 3em;
+  text-align: center;
+}
+
+@media only screen and (max-width: 768px) {
+
+
+  #thankYouContainer p{
+    font-size:2.8em;
+  }
+
+  #thankYouContainer h2{
+    font-size: 2em;
+  }
+
+}
+
+@media only screen and (max-width: 400px) {
+
+  #thankYouContainer{
+    height:300;
+  }
+
+
+  #thankYouContainer p{
+    font-size:2em;
+  }
+
+  #thankYouContainer h2{
+    font-size: 1em;
+  }
+
+}

@@ -1,0 +1,1657 @@
+$gradient1:#000c34;
+$gradient2:#009b35;
+$color: #1F2227;
+$black: #181818;
+$line:#04043c;
+
+a:hover{
+  color:green;
+}
+
+//loads fonts
+@font-face {
+  font-family: 'catamaran-black';
+  src:  url(../fonts/catamaran-black-webfont.woff2) format('woff2'),
+        url(../fonts/catamaran-black-webfont.woff) format('woff');
+}
+
+@font-face {
+  font-family: 'arimo-regular';
+  src:  url(../fonts/arimo-regular-webfont.woff2) format('woff2'),
+        url(../fonts/arimo-regular-webfont.woff) format('woff');
+}
+
+//assigns fonts to variables
+$mainFont: catamaran-black;
+$alternateFont: arimo-regular;
+
+//styles link underlines
+.sliding-middle-out {
+  display:inline-block;
+  margin-right:7%;
+}
+
+//inserts underline after element with this class assigned
+.sliding-middle-out:after {
+	content: '';
+	display: block;
+  margin-left:12px;
+  margin-top:65px;
+	height: 3px;
+	width: 0px;
+	background: transparent;
+	transition: width .5s ease, background-color .5s ease;
+}
+//slides underline out to its full width on hover
+.sliding-middle-out:hover:after {
+	width: 100%;
+	background: white;
+}
+
+.sliding-middle-out-first {
+  display:inline-block;
+  margin-right:7%;
+}
+
+.sliding-middle-out-first:after {
+	content: '';
+	display: block;
+  margin:auto;
+  margin-top:65px;
+	height: 3px;
+	width: 0px;
+	background: transparent;
+	transition: width .5s ease, background-color .5s ease;
+}
+
+.sliding-middle-out-first:hover:after {
+	width: 100%;
+	background: white;
+}
+
+//sets background of video section
+#vSection{
+  background: -webkit-linear-gradient(top left, $gradient1, #13374b, $gradient2);
+  background: -o-linear-gradient(top left, $gradient1, #13374b, $gradient2);
+  background: -moz-linear-gradient(top left, $gradient1, #13374b, $gradient2);
+  background: linear-gradient(to top left, $gradient1, #13374b, $gradient2);
+}
+
+//styles container of video and its controls
+#videoContainer{
+  height:700px;
+  width:70%;
+  margin-left:15%;
+}
+
+//styles the video itself
+video{
+  height:580px;
+  margin-top:25px;
+  margin-bottom:25px;
+  width:100%;
+  border:14px double #181818;
+  border-radius: 1em;
+}
+
+//styles the container of the controls, and sets font sizes for each button
+#controlsContainer{
+  width:100%;
+  margin-left:4%;
+  #playBt{
+  	font-size: 1.7em;
+  }
+  #volDown{
+  	font-size: 1.4em;
+  }
+  #volUp{
+  	font-size: 1.7em;
+  }
+  #replay{
+    font-size:1.5em;
+  }
+}
+
+//styles the buttons for the video controls
+.controls{
+  background-color:#181818;
+  color:white;
+  border-radius: 3em;
+  width:70%;
+  height:50px;
+  margin-left:15%;
+  border: solid;
+  border-color:#3a3a3a;
+  font-family: arimo-regular;
+}
+
+
+//styles the header, setting its position and z-index so it stays at the top of the page and above most of the content at all times
+header{
+  position: fixed;
+  z-index: 2;
+  top:0;
+  width:100%;
+  height:80px;
+  background-color:$black;
+  //styles logo that fades in on scroll
+  #fadeLogo{
+    width:5%;
+    margin-top:10px;
+    opacity:0;
+    height:60px;
+    float:left;
+    margin-left: 5%;
+  }
+  //styles nav that fades in on scroll
+  nav{
+    opacity:0;
+    float:left;
+    padding-top:40px;
+    margin-left:30px;
+    ul{
+      li{
+        display:inline;
+        color:white;
+        font-family: $alternateFont;
+        font-size: 1.5em;
+        margin-right:40px;
+        a{
+          color:white;
+        }
+      }
+    }
+  }
+}
+
+//styles content of the splash section
+#splash{
+  height:720px;
+  width:100%;
+  margin-top:80px;
+  background: url(../img/splashbackground.jpg);
+  background-size: cover;
+  #logoContainer{
+    margin-top:40px;
+    #logo{
+      width:65%;
+      margin-left:35%;
+    }
+  }
+  #splashLinksContainer{
+    height:200px;
+    padding-top:70px;
+    float: right;
+    a{
+      color:white;
+    }
+    p{
+      float:left;
+      font-family: $mainFont;
+      font-size:2.5em;
+      margin-left:10%;
+    }
+    #firstLink{
+      margin-left: 0%;
+    }
+  }
+  #titleContainer{
+    height:400px;
+    h2{
+      font-family: $mainFont;
+      font-size:6em;
+      color:white;
+      text-shadow: 2px 2px 8px black;
+    }
+    p{
+      color:white;
+      font-family: $alternateFont;
+      font-size: 2.4em;
+      text-shadow: 2px 2px 8px black;
+    }
+  }
+}
+
+//styles the email bar
+#emailBar{
+  width:100%;
+  background-color:$black;
+  height:70px;
+  border-top:solid white;
+  border-top-width: 0.5px;
+  border-bottom: solid white;
+  border-bottom-width: 0.5px;
+  h2{
+    width:25%;
+    color:white;
+    float:left;
+    font-size:1.5em;
+    margin-top:20px;
+    margin-left: 20px;
+  }
+  form{
+    float:left;
+    margin-left: 25%;
+    margin-top:-45px;
+    width:75%;
+    input{
+      background-color:$black;
+      border-style: solid white;
+      border-radius:10px;
+      text-align:center;
+      color:white;
+
+    }
+    #button{
+      height:40px;
+    }
+    #button:hover{
+      cursor: pointer;
+    }
+  }
+}
+
+//styles all of the content in the timeline
+#timelineContainer{
+  margin-top:10px;
+  width: 100%;
+  height:1450px;
+  background: -webkit-linear-gradient(top left, $gradient1, #13374b, $gradient2);
+  background: -o-linear-gradient(top left, $gradient1, #13374b, $gradient2);
+  background: -moz-linear-gradient(top left, $gradient1, #13374b, $gradient2);
+  background: linear-gradient(to top left, $gradient1, #13374b, $gradient2);
+  //styles the top banner of the timeline
+  #timelineBanner{
+    background: url(../img/timelineBanner.png);
+    height:400px;
+    width:100%;
+    background-size: cover;
+    #bannerInfo{
+      height:350px;
+      margin-top:25px;
+      background:rgba(255,255,255,0.1);
+      #teamT{
+        color:white;
+        font-size:2.9em;
+        font-family: $mainFont;
+        margin-left:22%;
+      }
+      img{
+        width:30%;
+        float:left;
+        margin-left: 55%;
+        margin-top:-115px;
+      }
+    }
+  }
+  //styles the container for the year links
+  #yearsContainer{
+    margin-top:80px;
+    width:100%;
+    #mainYear{
+      color:white;
+    }
+  }
+  #verticalLine{
+    width:15px;
+    height:100px;
+    clear:left;
+    background-color: $line;
+    margin-left:48%;
+  }
+  //styles the paragraph for each year
+  #yearText{
+    width:80%;
+    margin-left:10%;
+    color:white;
+    background:rgba(255, 255, 255, 0.1);
+    font-family: $alternateFont;
+    font-size:1.7em;
+    text-align: center;
+    padding:20px 20px 20px 20px;
+    overflow: scroll;
+    height:400px;
+    #yearHeader{
+      color:#e8e661;
+      font-size:1.7em;
+    }
+  }
+}
+
+//styles the container of all the photos in the gallery
+#photoContainer{
+  margin-top:10px;
+  background: url(../img/gallerybackground.jpg);
+  background-size: cover;
+  padding-top: 250px;
+  background-repeat: no-repeat;
+  height:850px;
+  //styles the actual photos
+  #photos{
+    line-height:15;
+    -webkit-column-count: 5;
+    -webkit-column-gap: 20px;
+    -moz-column-count: 5;
+    -moz-column-gap: 20px;
+    column-count: 5;
+    column-gap: 20px;
+    height:600px;
+    overflow-y: scroll;
+  }
+  //styles the lightbox container
+  #lightbox{
+    margin-top:-775px;
+    margin-left:25%;
+    width:50%;
+    position: absolute;
+    z-index: 5;
+    display: none;
+    background-color: $gradient2;
+    //styles the lightbox image
+    #lightBoxImage{
+      border: solid;
+      border-color: $gradient2;
+      width:100%;
+    }
+  }
+}
+
+#lightboxlinkcont{
+  margin-left: 27%;
+}
+.lightboxlink{
+  margin-bottom:15px;
+}
+//styles the close button for the lightbox
+.closebtn{
+  position:absolute;
+  top:-40px;
+  right:10px;
+  font-size:5em;
+  background:rgba(0, 0, 0, 0);
+}
+
+//styles the overaly for the lightbox
+#overlay{
+  background: linear-gradient(to right, rgba(0,12,52,0.8), rgba(0,155,53,0.8));
+  width:100%;
+  height:100%;
+  position: fixed;
+  top:0;
+  left:0;
+  z-index: 4;
+  display:none;
+}
+
+//styles the news section
+#newsContainer{
+  width:100%;
+  height:750px;
+  background: url(../img/newsBackground.png);
+  background-size: cover;
+  margin-top:10px;
+  color:white;
+  font-family: $alternateFont;
+  //styles the article content
+  #newsItems{
+    margin-top:40px;
+    text-align: left;
+    #articleTitle{
+      font-size:3em;
+    }
+    #newsImage{
+      width:80%;
+      height:400px;
+      background-color:white;
+    }
+    p{
+      margin-top:20px;
+      font-size:1.5em;
+      width:85%;
+    }
+  }
+
+}
+
+//styles the secondary email bar
+#secondEmailBar{
+  border-style: solid;
+  width:100%;
+  border-left: none;
+  border-right:none;
+  font-family:$alternateFont;
+  font-size:1.2em;
+  h3{
+    font-family:$mainFont;
+    font-size:2em;
+  }
+  form{
+    padding-top:20px;
+    input{
+      height:70px;
+      font-family:$mainFont;
+      text-align:center;
+    }
+  }
+}
+
+//styles the footer
+footer{
+  width:100%;
+  background-color:black;
+  height:120px;
+  background: -webkit-linear-gradient(bottom right, $gradient1, #13374b, $gradient2);
+  background: -o-linear-gradient(bottom right, $gradient1, #13374b, $gradient2);
+  background: -moz-linear-gradient(bottom right, $gradient1, #13374b, $gradient2);
+  background: linear-gradient(bottom right, $gradient1, #13374b, $gradient2);
+  #fadeLogo2{
+    width:5%;
+    margin-top:25px;
+    margin-left:5%;
+    height:60px;
+    float:left;
+  }
+  #facebookIcon{
+    margin-left:27%;
+  }
+  #footerNav{
+    margin-left:17%;
+    margin-top:15px;
+    font-family: $alternateFont;
+    ul{
+      li{
+        display:inline;
+        border-right:solid white;
+        margin-left:5%;
+        a{
+          color:white;
+          font-size:1.3em;
+          padding-right:5%
+        }
+      }
+      #lastLink{
+        border-right:none;
+      }
+    }
+  }
+}
+//makes sure the images in the gallery are the right size
+#photos img{
+  width:100% !important;
+  height: auto !important;
+}
+
+//styles the titles in the timeline banner
+.bText{
+  color:white;
+  font-size:3.2em;
+  font-family: $mainFont;
+  text-align:center;
+
+}
+
+//hides content
+.hidden{
+  display:none;
+}
+
+//styles the container of the stats
+.stat{
+  height:170px;
+  border-style:solid;
+  border-color:white;
+  width:95%;
+  margin:auto;
+  margin-top:40px;
+  text-align:center;
+  color:white;
+  font-family:$mainFont;
+  h3{
+    font-size: 1.2em;
+  }
+}
+
+//styles the actual changing stats
+.changeling{
+  font-size:1.6em;
+  margin-top:-30px;
+  font-family:$alternateFont;
+}
+
+//styles the lines between years in the timeline
+.blueLine{
+  background-color:$line;
+  height:15px;
+  float:left;
+  width:15%;
+}
+
+//styles the actual year text
+.year{
+  width:19%;
+  float:left;
+  margin-top:-75px;
+  font-family: $mainFont;
+  font-size:5.5em;
+  text-align: center;
+  color:$line;
+}
+
+//styles the end lines
+.bookEndLine{
+  width:5%;
+}
+
+//styles the far right line
+#lastLine{
+  width:8%
+}
+
+//styles the grey boxes under each year
+.subheadBox{
+  width:20%;
+  height:65px;
+  background:rgba(255, 255, 255, 0.1);
+  float:left;
+  margin-left:6.1%;
+  margin-right:6.1%;
+  color:white;
+  text-align:center;
+  font-family: $mainFont;
+  font-size:1.9em;
+  padding:4px 4px 4px 4px;
+  -moz-box-shadow: inset 2px 2px 2px rgba(0, 0, 0, .1), inset -2px -2px 2px rgba(255, 255, 255, .1);
+  -webkit-box-shadow: inset 2px 2px 2px rgba(0, 0, 0, .1), inset -2px -2px 2px rgba(255, 255, 255, .1);
+  box-shadow: inset 2px 2px 2px rgba(0, 0, 0, .1), inset -2px -2px 2px rgba(255, 255, 255, .1);
+}
+
+
+#prevYear:hover{
+  cursor:pointer;
+}
+
+#nextYear:hover{
+  cursor:pointer;
+}
+
+//styles banner
+.banner{
+  width:100%;
+  color:white;
+  background-color:$black;
+  height:80px;
+  text-align:center;
+  font-size:3em;
+  padding-top:5px;
+  margin-bottom:-10px;
+  border: solid white;
+  border-width:1px;
+  border-left:none;
+  border-right:none;
+}
+
+//styles social icons in the footer
+.socialLink{
+  margin-top:10px;
+  margin-left:5%;
+}
+
+@media only screen and (max-width: 1022px){
+
+  #videoContainer{
+    height:600px;
+    width:80%;
+    margin-left:10%;
+  }
+  video{
+    height:400px;
+    margin-top:50px;
+    margin-bottom:25px;
+    width:100%;
+    border:14px double #181818;
+    border-radius: 1em;
+  }
+
+  #controlsContainer{
+    width:100%;
+    margin-left:1%;
+    #playBt{
+    	font-size: 1.7em;
+    }
+    #volDown{
+    	font-size: 1.4em;
+    }
+    #volUp{
+    	font-size: 1.7em;
+    }
+    #replay{
+      font-size:1.5em;
+    }
+  }
+
+  .controls{
+    background-color:#181818;
+    color:white;
+    border-radius: 3em;
+    width:70%;
+    height:50px;
+    margin-left:15%;
+    border: solid;
+    border-color:#3a3a3a;
+    font-family: arimo-regular;
+  }
+
+
+  .sidenav{
+    opacity:1;
+    height:100%;
+    width: 0;
+    position: fixed;
+    z-index: 2;
+    top:0;
+    left:0;
+    background: linear-gradient(to right, rgba(0,12,52,0.9), rgba(0,155,53,0.9));
+    overflow-x: hidden;
+    padding-top: 60px;
+    transition: 0.5s;
+  }
+
+  .sidenav a{
+    text-align: center;
+    padding: 40px 8px 8px 32px;
+    text-decoration:none;
+    font-size:3em;
+    font-family: sans-serif;
+    color:white;
+    display:block;
+    transition: 0.3s;
+  }
+
+
+  .sidenav a:hover, .offcanvas a:focus{
+    color:$gradient2;
+  }
+
+  .sidenav .closebtnNav{
+    position:absolute;
+    top:0;
+    right:25px;
+    font-size:36px;
+    margin-left: 50px;
+  }
+
+  #opener{
+    height:80px;
+    width:10%;
+    margin-left: 85%;
+    margin-top: 0%;
+    float: left;
+  }
+
+  #splash{
+    #logoContainer{
+      padding-top:40px;
+      #logo{
+        width:80%;
+        margin-left:20%;
+
+      }
+    }
+  }
+  #emailBar{
+    h2{
+      width:25%;
+      color:white;
+      float:left;
+      font-size:1.2em;
+      margin-top:20px;
+      margin-left: 10px;
+    }
+    form{
+      float:left;
+      margin-top:-38px;
+      width:70%;
+      margin-left: 30%;
+      input{
+        background-color:$black;
+        border-style: solid white;
+        border-radius:10px;
+        text-align:center;
+        color:white;
+
+      }
+      #button{
+        height:40px;
+      }
+      #button:hover{
+        cursor: pointer;
+      }
+    }
+  }
+  #timelineContainer{
+    #stats{
+      color:black;
+    }
+    #timelineBanner{
+      #bannerInfo{
+        #teamT{
+          color:white;
+          font-size:2.9em;
+          font-family: $mainFont;
+          margin-left:22%;
+        }
+        img{
+          width:30%;
+          float:left;
+          margin-left: 65%;
+          margin-top:-95px;
+        }
+      }
+    }
+    #yearsContainer{
+      margin-top:80px;
+      width:100%;
+      #mainYear{
+        color:white;
+      }
+    }
+    #verticalLine{
+      width:15px;
+      height:100px;
+      clear:left;
+      background-color: $line;
+      margin-left:48%;
+    }
+    #yearText{
+      width:80%;
+      margin-left:10%;
+      color:white;
+      background:rgba(255, 255, 255, 0.1);
+      -moz-box-shadow: inset 2px 2px 2px rgba(0, 0, 0, .1), inset -2px -2px 2px rgba(255, 255, 255, .1);
+      -webkit-box-shadow: inset 2px 2px 2px rgba(0, 0, 0, .1), inset -2px -2px 2px rgba(255, 255, 255, .1);
+      box-shadow: inset 2px 2px 2px rgba(0, 0, 0, .1), inset -2px -2px 2px rgba(255, 255, 255, .1);
+      font-family: $alternateFont;
+      font-size:1.7em;
+      text-align: center;
+      padding:20px 20px 20px 20px;
+      #yearHeader{
+        color:#e8e661;
+        font-size:1.7em;
+      }
+    }
+  }
+
+  .stat{
+    height:170px;
+    border-style:solid;
+    border-color:white;
+    width:95%;
+    margin:auto;
+    margin-top:40px;
+    text-align:center;
+    color:white;
+    font-family:$mainFont;
+    h3{
+      font-size:.9em;
+    }
+  }
+
+  .changeling{
+    margin-top:-30px;
+    font-family:$alternateFont;
+    font-size:1.3em;
+  }
+
+  .blueLine{
+    width:10%;
+  }
+
+  .year{
+    width:25%;
+    float:left;
+    margin-top:-75px;
+    font-family: $mainFont;
+    font-size:5.5em;
+    text-align: center;
+    color:$line;
+  }
+
+  .bookEndLine{
+    width:2%;
+  }
+
+  #lastLine{
+    width:3%
+  }
+
+  .subheadBox{
+    width:25%;
+    height:65px;
+    background:rgba(255, 255, 255, 0.1);
+    float:left;
+    margin-left:4%;
+    margin-right:4%;
+    color:white;
+    text-align:center;
+    font-family: $mainFont;
+    font-size:1.5em;
+    padding:10px 4px 4px 4px;
+  }
+
+  #newsContainer{
+    height:600px;
+    #newsItems{
+      margin-top:20px;
+      text-align: left;
+      #articleTitle{
+        font-size:2em;
+      }
+      #newsImage{
+        height:300px;
+      }
+      p{
+        margin-top:10px;
+        font-size:1.2em;
+        width:85%;
+      }
+    }
+
+  }
+
+  #secondEmailBar{
+    font-size:1em;
+    h3{
+      font-family:$mainFont;
+      font-size:2em;
+    }
+    form{
+      padding-top:20px;
+      input{
+        height:70px;
+        font-family:$mainFont;
+        text-align:center;
+      }
+    }
+  }
+
+
+}
+
+@media only screen and (max-width: 768px){
+
+  video{
+    width:100%;
+    height:430px;
+  }
+
+  #splash{
+    height:720px;
+    width:100%;
+    margin-top:80px;
+    background: url(../img/splashbackground.jpg);
+    background-size: cover;
+    #logoContainer{
+      margin-top:40px;
+      #logo{
+        width:65%;
+        margin-left:35%;
+      }
+    }
+    #titleContainer{
+      height:400px;
+      h2{
+        font-family: $mainFont;
+        font-size:6em;
+        color:white;
+        text-shadow: 2px 2px 8px black;
+      }
+      p{
+        color:white;
+        font-family: $alternateFont;
+        font-size: 2.4em;
+        text-shadow: 2px 2px 8px black;
+      }
+    }
+  }
+
+  #emailBar{
+    h2{
+      width:25%;
+      color:white;
+      float:left;
+      font-size:1.3em;
+      margin-top:10px;
+      margin-left: 20px;
+    }
+    form{
+      float:left;
+      margin-left: 25%;
+      margin-top:-60px;
+      width:75%;
+      input{
+        background-color:$black;
+        border-style: solid white;
+        border-radius:10px;
+        text-align:center;
+        color:white;
+
+      }
+    }
+  }
+
+
+  #timelineContainer{
+    margin-top:10px;
+    width: 100%;
+    height:1700px;
+    background: -webkit-linear-gradient(top left, $gradient1, #13374b, $gradient2);
+    background: -o-linear-gradient(top left, $gradient1, #13374b, $gradient2);
+    background: -moz-linear-gradient(top left, $gradient1, #13374b, $gradient2);
+    background: linear-gradient(to top left, $gradient1, #13374b, $gradient2);
+    #timelineBanner{
+      font-size: .84em;
+      #bannerInfo{
+        #teamT{
+          margin-left:9%;
+        }
+        img{
+          margin-left: 55%;
+          margin-top:-80px;
+        }
+      }
+    }
+  }
+
+  .stat{
+    h3{
+      font-size:.65em;
+      margin-top:20px;
+    }
+  }
+
+  .changeling{
+    margin-top:-30px;
+    font-size:1.6em;
+  }
+
+
+
+  .year{
+    margin-top:-60px;
+    font-size:4.3em;
+  }
+
+  #lastLine{
+    width:3%
+  }
+
+  .subheadBox{
+    font-size:1.3em;
+    padding:4px 4px 4px 4px;
+  }
+
+  #photoContainer{
+    padding-top: 100px;
+    height:600px;
+    #lightbox{
+      margin-top:-725px;
+      margin-left:15%;
+      width:70%;
+    }
+  }
+
+  footer{
+    height:120px;
+    #fadeLogo2{
+      width:8%;
+    }
+    #facebookIcon{
+      margin-left:27%;
+    }
+    #footerNav{
+      ul{
+        li{
+          a{
+            font-size:1em;
+          }
+        }
+      }
+    }
+  }
+
+}
+
+@media only screen and (max-width: 600px){
+  .sidenav{
+    opacity:1;
+    height:100%;
+    width: 0;
+    position: fixed;
+    z-index: 2;
+    top:0;
+    left:0;
+    background: linear-gradient(to right, rgba(0,12,52,0.9), rgba(0,155,53,0.9));
+    overflow-x: hidden;
+    padding-top: 60px;
+    transition: 0.5s;
+  }
+
+  .sidenav a{
+    text-align: center;
+    padding: 40px 8px 8px 32px;
+    text-decoration:none;
+    font-size:3em;
+    font-family: sans-serif;
+    color:white;
+    display:block;
+    transition: 0.3s;
+  }
+
+
+  .sidenav a:hover, .offcanvas a:focus{
+    color:$gradient2;
+  }
+
+  .sidenav .closebtnNav{
+    position:absolute;
+    top:0;
+    right:25px;
+    font-size:36px;
+    margin-left: 50px;
+  }
+
+  #opener{
+    height:60px;
+    width:10%;
+    margin-left: 40px;
+    margin-top: 80px;
+  }
+
+  video{
+    width:100%;
+    height:310px;
+  }
+
+  #splash{
+    height:650px;
+    margin-top:80px;
+    #logoContainer{
+      margin-top:10px;
+      #logo{
+        width:55%;
+        margin-left:35%;
+      }
+    }
+    #titleContainer{
+      margin-top:80px;
+      height:300px;
+      h2{
+        font-size:5em;
+      }
+      p{
+        font-size: 2.4em;
+      }
+    }
+  }
+
+  #emailBar{
+    h2{
+      width:24%;
+      font-size:1.3em;
+      margin-top:10px;
+      margin-left: 20px;
+    }
+    form{
+      margin-top:-60px;
+      width:75%;
+      input{
+        background-color:$black;
+        border-style: solid white;
+        border-radius:10px;
+        text-align:center;
+        color:white;
+
+      }
+      #button{
+        height:40px;
+      }
+      #button:hover{
+        cursor: pointer;
+      }
+    }
+  }
+
+  #timelineContainer{
+    #timelineBanner{
+      #bannerInfo{
+        img{
+          width:30%;
+          float:left;
+          margin-left: 60%;
+          margin-top:-115px;
+        }
+      }
+    }
+    #yearsContainer{
+      #mainYear{
+        color:white;
+      }
+    }
+    #verticalLine{
+    }
+    #yearText{
+      width:80%;
+      margin-left:10%;
+      color:white;
+      background:rgba(255, 255, 255, 0.1);
+      -moz-box-shadow: inset 2px 2px 2px rgba(0, 0, 0, .1), inset -2px -2px 2px rgba(255, 255, 255, .1);
+      -webkit-box-shadow: inset 2px 2px 2px rgba(0, 0, 0, .1), inset -2px -2px 2px rgba(255, 255, 255, .1);
+      box-shadow: inset 2px 2px 2px rgba(0, 0, 0, .1), inset -2px -2px 2px rgba(255, 255, 255, .1);
+      font-family: $alternateFont;
+      font-size:1.3em;
+      text-align: center;
+      padding:20px 20px 20px 20px;
+      #yearHeader{
+        color:#e8e661;
+        font-size:1.7em;
+      }
+    }
+}
+
+.changeling{
+  font-size:2em;
+  margin-top:-30px;
+  font-family:$alternateFont;
+}
+
+.blueLine{
+  background-color:$line;
+  height:15px;
+  float:left;
+  width:12%;
+}
+
+.year{
+  width:19%;
+  margin-left:1%;
+  margin-right:1%;
+  float:left;
+  margin-top:-40px;
+  font-family: $mainFont;
+  font-size:3em;
+  text-align: center;
+  color:$line;
+}
+
+.bookEndLine{
+  width:5%;
+}
+
+#lastLine{
+  width:8%
+}
+
+.subheadBox{
+  font-size:1.2em;
+}
+
+.stat{
+  height:170px;
+  border-style:solid;
+  border-color:white;
+  width:95%;
+  margin:auto;
+  margin-top:40px;
+  text-align:center;
+  color:white;
+  font-family:$mainFont;
+  h3{
+    font-size: 1em;
+  }
+}
+
+#photoContainer{
+  margin-top:10px;
+  background: url(../img/gallerybackground.jpg);
+  background-size: cover;
+  padding-top: 60px;
+  background-repeat: no-repeat;
+  height:500px;
+  #photos{
+    -webkit-column-gap: 10px;
+    -moz-column-gap: 10px;
+    column-gap: 10px;
+    height:500px;
+  }
+  #lightbox{
+    margin-top:-500px;
+    margin-left:15%;
+    width:70%;
+    #lightBoxImage{
+      border: solid;
+      border-color: green;
+      width:100%;
+      margin-left:0%;
+      width:100%;
+    }
+  }
+}
+
+#newsContainer{
+  height:450px;
+  #newsItems{
+    margin-top:10px;
+    text-align: center;
+    #articleTitle{
+      font-size:2em;
+    }
+    #newsImage{
+      width:60%;
+      height:250px;
+      background-color:white;
+    }
+    p{
+      margin-top:5px;
+      text-align: left;
+      font-size:1em;
+      width:60%;
+      margin-left: 20%;
+      height:100px;
+      overflow:scroll;
+    }
+  }
+
+}
+
+.closebtn{
+  top:-20px;
+  font-size:3em;
+}
+
+#overlay{
+  top:0;
+  left:0;
+}
+
+footer{
+  height:100px;
+  #fadeLogo2{
+    width:10%;
+    margin-top:15px;
+    margin-left:5%;
+    height:40px;
+    float:left;
+  }
+  #facebookIcon{
+    margin-left:27%;
+  }
+  #footerNav{
+    margin-left:10%;
+    margin-top:15px;
+    font-family: $alternateFont;
+    ul{
+      height:5px;
+      li{
+        display:inline;
+        border-right:solid white;
+        margin-left:5%;
+        a{
+          color:white;
+          font-size:.9em;
+          padding-right:5%
+        }
+      }
+    }
+  }
+}
+
+
+}
+
+
+@media only screen and (max-width: 400px){
+  header{
+    height:60px;
+}
+#splash{
+  height:400px;
+  margin-top:60px;
+  #logoContainer{
+    margin-top:0px;
+    #logo{
+      width:50%;
+      margin-left:15%;
+    }
+  }
+  #titleContainer{
+    margin-top:30px;
+    h2{
+      font-size:2.3em;
+    }
+    p{
+      font-size: 1em;
+    }
+  }
+}
+
+#emailBar{
+  width:100%;
+  background-color:$black;
+  height:70px;
+  border-top:solid white;
+  border-top-width: 0.5px;
+  border-bottom: solid white;
+  border-bottom-width: 0.5px;
+  h2{
+    width:25%;
+    color:white;
+    float:left;
+    font-size:.7em;
+    margin-top:12px;
+    margin-left: 10px;
+  }
+  form{
+    float:left;
+    margin-left: 30%;
+    margin-top:-45px;
+    width:75%;
+    input{
+      background-color:$black;
+      border-style: solid white;
+      border-radius:10px;
+      text-align:center;
+      color:white;
+      font-size:.6em;
+
+    }
+  }
+}
+
+#videoContainer{
+  height:500px;
+  width:90%;
+  margin-left:5%;
+}
+video{
+  height:290px;
+  border:10px double #181818;
+}
+
+#controlsContainer{
+  margin-left:2%;
+  #playBt{
+  	font-size: 1.3em;
+  }
+  #volDown{
+  	font-size: 1em;
+  }
+  #volUp{
+  	font-size: 1.2em;
+  }
+  #replay{
+    font-size:1.2em;
+  }
+}
+
+.controls{
+  background-color:#181818;
+  color:white;
+  border-radius: 3em;
+  width:85%;
+  height:50px;
+  margin-left:10%;
+  border: solid;
+  border-color:#3a3a3a;
+  font-family: arimo-regular;
+}
+
+.banner{
+  height:60px;
+  text-align:center;
+  font-size:2em;
+}
+
+#timelineContainer{
+  margin-top:10px;
+  width: 100%;
+  height:1000px;
+  background: -webkit-linear-gradient(top left, $gradient1, #13374b, $gradient2);
+  background: -o-linear-gradient(top left, $gradient1, #13374b, $gradient2);
+  background: -moz-linear-gradient(top left, $gradient1, #13374b, $gradient2);
+  background: linear-gradient(to top left, $gradient1, #13374b, $gradient2);
+  #timelineBanner{
+    background: url(../img/timelineBanner.png);
+    height:200px;
+    width:100%;
+    background-size: cover;
+    #bannerInfo{
+      height:170px;
+      margin-top:15px;
+      background:rgba(255,255,255,0.1);
+      #teamT{
+        color:white;
+        font-size:1.3em;
+        font-family: $mainFont;
+        margin-left:22%;
+      }
+      img{
+        width:30%;
+        float:left;
+        margin-left: 45%;
+        margin-top:-70px;
+      }
+    }
+  }
+  #yearsContainer{
+    margin-top:80px;
+    width:100%;
+    #mainYear{
+      color:white;
+    }
+  }
+  #verticalLine{
+    width:8px;
+    height:60px;
+    clear:left;
+    background-color: $line;
+    margin-left:48%;
+  }
+  #yearText{
+    height:290px;
+    overflow: scroll;
+    font-size:1em;
+    width:90%;
+    margin-left:5%;
+    text-align: center;
+    padding:20px 20px 20px 20px;
+    #yearHeader{
+      color:#e8e661;
+      font-size:1.7em;
+    }
+  }
+}
+
+#photoContainer{
+  margin-top:10px;
+  background: url(../img/gallerybackground.jpg);
+  background-size: cover;
+  padding-top: 100px;
+  height:570px;
+  background-repeat: no-repeat;
+  #photos{
+    line-height:15px;
+    -webkit-column-count: 3;
+    -webkit-column-gap: 20px;
+    -moz-column-count: 3;
+    -moz-column-gap: 20px;
+    column-count: 3;
+    column-gap: 20px;
+    height:350px;
+    overflow-y: scroll;
+  }
+}
+
+#newsContainer{
+  height:450px;
+  #newsItems{
+    margin-top:10px;
+    text-align: center;
+    #articleTitle{
+      font-size:2em;
+    }
+    #newsImage{
+      width:65%;
+      height:250px;
+      background-color:white;
+    }
+    p{
+      margin-top:5px;
+      text-align: left;
+      font-size:1em;
+      width:60%;
+      margin-left: 17%;
+      height:100px;
+      overflow:scroll;
+    }
+  }
+
+}
+
+
+.bText{
+  font-size:1.65em;
+}
+
+.stat{
+  height:120px;
+  margin-top:20px;
+  h3{
+    font-size: .6em;
+  }
+}
+
+.blueLine{
+  background-color:$line;
+  height:7px;
+  float:left;
+  width:5%;
+}
+
+.year{
+  width:19%;
+  float:left;
+  margin-top:-20px;
+  font-family: $mainFont;
+  font-size:1.7em;
+  margin-left:3.25%;
+  margin-right:3.25%;
+}
+
+.subheadBox{
+  height:55px;
+  font-size:.8em;
+  padding:4px 4px 4px 4px;
+}
+
+#secondEmailBar{
+  font-size:.4em;
+  padding-top:7px;
+  form{
+    padding-top:10px;
+    input{
+      height:50px;
+    }
+  }
+}
+
+footer{
+  height:80px;
+  #fadeLogo2{
+    width:10%;
+    margin-top:15px;
+    margin-left:5%;
+    height:40px;
+    float:left;
+  }
+  #facebookIcon{
+    margin-left:27%;
+  }
+  #footerNav{
+    margin-left:10%;
+    margin-top:15px;
+    font-family: $alternateFont;
+    ul{
+      height:5px;
+      li{
+        display:inline;
+        border-right:solid white;
+        margin-left:5%;
+        a{
+          color:white;
+          font-size:.7em;
+          padding-right:3%
+        }
+      }
+      #lastLink{
+        border-right:none;
+      }
+    }
+  }
+}
+
+.socialLink{
+  margin-top:10px;
+  width:5%;
+  margin-left:5%;
+}
+
+.sidenav{
+  opacity:1;
+  height:100%;
+  width: 0;
+  position: fixed;
+  z-index: 2;
+  top:0;
+  left:0;
+  background: linear-gradient(to right, rgba(0,12,52,0.9), rgba(0,155,53,0.9));
+  overflow-x: hidden;
+  padding-top: 60px;
+  transition: 0.5s;
+}
+
+.sidenav a{
+  text-align: center;
+  padding: 40px 8px 8px 32px;
+  text-decoration:none;
+  font-size:3em;
+  font-family: sans-serif;
+  color:white;
+  display:block;
+  transition: 0.3s;
+}
+
+
+.sidenav a:hover, .offcanvas a:focus{
+  color:$gradient2;
+}
+
+.sidenav .closebtnNav{
+  position:absolute;
+  top:0;
+  right:25px;
+  font-size:36px;
+  margin-left: 50px;
+}
+
+#opener{
+  height:40px;
+  width:10%;
+  margin-top:50px;
+  margin-left: 20px;
+}
+
+.changeling{
+  font-size:1.4em;
+}
+
+}

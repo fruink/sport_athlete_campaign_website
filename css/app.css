@@ -1,0 +1,1273 @@
+a:hover {
+  color: green; }
+
+@font-face {
+  font-family: 'catamaran-black';
+  src: url(../fonts/catamaran-black-webfont.woff2) format("woff2"), url(../fonts/catamaran-black-webfont.woff) format("woff"); }
+@font-face {
+  font-family: 'arimo-regular';
+  src: url(../fonts/arimo-regular-webfont.woff2) format("woff2"), url(../fonts/arimo-regular-webfont.woff) format("woff"); }
+.sliding-middle-out {
+  display: inline-block;
+  margin-right: 7%; }
+
+.sliding-middle-out:after {
+  content: '';
+  display: block;
+  margin-left: 12px;
+  margin-top: 65px;
+  height: 3px;
+  width: 0px;
+  background: transparent;
+  transition: width .5s ease, background-color .5s ease; }
+
+.sliding-middle-out:hover:after {
+  width: 100%;
+  background: white; }
+
+.sliding-middle-out-first {
+  display: inline-block;
+  margin-right: 7%; }
+
+.sliding-middle-out-first:after {
+  content: '';
+  display: block;
+  margin: auto;
+  margin-top: 65px;
+  height: 3px;
+  width: 0px;
+  background: transparent;
+  transition: width .5s ease, background-color .5s ease; }
+
+.sliding-middle-out-first:hover:after {
+  width: 100%;
+  background: white; }
+
+#vSection {
+  background: -webkit-linear-gradient(top left, #000c34, #13374b, #009b35);
+  background: -o-linear-gradient(top left, #000c34, #13374b, #009b35);
+  background: -moz-linear-gradient(top left, #000c34, #13374b, #009b35);
+  background: linear-gradient(to top left, #000c34, #13374b, #009b35); }
+
+#videoContainer {
+  height: 700px;
+  width: 70%;
+  margin-left: 15%; }
+
+video {
+  height: 580px;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  width: 100%;
+  border: 14px double #181818;
+  border-radius: 1em; }
+
+#controlsContainer {
+  width: 100%;
+  margin-left: 4%; }
+  #controlsContainer #playBt {
+    font-size: 1.7em; }
+  #controlsContainer #volDown {
+    font-size: 1.4em; }
+  #controlsContainer #volUp {
+    font-size: 1.7em; }
+  #controlsContainer #replay {
+    font-size: 1.5em; }
+
+.controls {
+  background-color: #181818;
+  color: white;
+  border-radius: 3em;
+  width: 70%;
+  height: 50px;
+  margin-left: 15%;
+  border: solid;
+  border-color: #3a3a3a;
+  font-family: arimo-regular; }
+
+header {
+  position: fixed;
+  z-index: 2;
+  top: 0;
+  width: 100%;
+  height: 80px;
+  background-color: #181818; }
+  header #fadeLogo {
+    width: 5%;
+    margin-top: 10px;
+    opacity: 0;
+    height: 60px;
+    float: left;
+    margin-left: 5%; }
+  header nav {
+    opacity: 0;
+    float: left;
+    padding-top: 40px;
+    margin-left: 30px; }
+    header nav ul li {
+      display: inline;
+      color: white;
+      font-family: arimo-regular;
+      font-size: 1.5em;
+      margin-right: 40px; }
+      header nav ul li a {
+        color: white; }
+
+#splash {
+  height: 720px;
+  width: 100%;
+  margin-top: 80px;
+  background: url(../img/splashbackground.jpg);
+  background-size: cover; }
+  #splash #logoContainer {
+    margin-top: 40px; }
+    #splash #logoContainer #logo {
+      width: 65%;
+      margin-left: 35%; }
+  #splash #splashLinksContainer {
+    height: 200px;
+    padding-top: 70px;
+    float: right; }
+    #splash #splashLinksContainer a {
+      color: white; }
+    #splash #splashLinksContainer p {
+      float: left;
+      font-family: catamaran-black;
+      font-size: 2.5em;
+      margin-left: 10%; }
+    #splash #splashLinksContainer #firstLink {
+      margin-left: 0%; }
+  #splash #titleContainer {
+    height: 400px; }
+    #splash #titleContainer h2 {
+      font-family: catamaran-black;
+      font-size: 6em;
+      color: white;
+      text-shadow: 2px 2px 8px black; }
+    #splash #titleContainer p {
+      color: white;
+      font-family: arimo-regular;
+      font-size: 2.4em;
+      text-shadow: 2px 2px 8px black; }
+
+#emailBar {
+  width: 100%;
+  background-color: #181818;
+  height: 70px;
+  border-top: solid white;
+  border-top-width: 0.5px;
+  border-bottom: solid white;
+  border-bottom-width: 0.5px; }
+  #emailBar h2 {
+    width: 25%;
+    color: white;
+    float: left;
+    font-size: 1.5em;
+    margin-top: 20px;
+    margin-left: 20px; }
+  #emailBar form {
+    float: left;
+    margin-left: 25%;
+    margin-top: -45px;
+    width: 75%; }
+    #emailBar form input {
+      background-color: #181818;
+      border-style: solid white;
+      border-radius: 10px;
+      text-align: center;
+      color: white; }
+    #emailBar form #button {
+      height: 40px; }
+    #emailBar form #button:hover {
+      cursor: pointer; }
+
+#timelineContainer {
+  margin-top: 10px;
+  width: 100%;
+  height: 1450px;
+  background: -webkit-linear-gradient(top left, #000c34, #13374b, #009b35);
+  background: -o-linear-gradient(top left, #000c34, #13374b, #009b35);
+  background: -moz-linear-gradient(top left, #000c34, #13374b, #009b35);
+  background: linear-gradient(to top left, #000c34, #13374b, #009b35); }
+  #timelineContainer #timelineBanner {
+    background: url(../img/timelineBanner.png);
+    height: 400px;
+    width: 100%;
+    background-size: cover; }
+    #timelineContainer #timelineBanner #bannerInfo {
+      height: 350px;
+      margin-top: 25px;
+      background: rgba(255, 255, 255, 0.1); }
+      #timelineContainer #timelineBanner #bannerInfo #teamT {
+        color: white;
+        font-size: 2.9em;
+        font-family: catamaran-black;
+        margin-left: 22%; }
+      #timelineContainer #timelineBanner #bannerInfo img {
+        width: 30%;
+        float: left;
+        margin-left: 55%;
+        margin-top: -115px; }
+  #timelineContainer #yearsContainer {
+    margin-top: 80px;
+    width: 100%; }
+    #timelineContainer #yearsContainer #mainYear {
+      color: white; }
+  #timelineContainer #verticalLine {
+    width: 15px;
+    height: 100px;
+    clear: left;
+    background-color: #04043c;
+    margin-left: 48%; }
+  #timelineContainer #yearText {
+    width: 80%;
+    margin-left: 10%;
+    color: white;
+    background: rgba(255, 255, 255, 0.1);
+    font-family: arimo-regular;
+    font-size: 1.7em;
+    text-align: center;
+    padding: 20px 20px 20px 20px;
+    overflow: scroll;
+    height: 400px; }
+    #timelineContainer #yearText #yearHeader {
+      color: #e8e661;
+      font-size: 1.7em; }
+
+#photoContainer {
+  margin-top: 10px;
+  background: url(../img/gallerybackground.jpg);
+  background-size: cover;
+  padding-top: 250px;
+  background-repeat: no-repeat;
+  height: 850px; }
+  #photoContainer #photos {
+    line-height: 15;
+    -webkit-column-count: 5;
+    -webkit-column-gap: 20px;
+    -moz-column-count: 5;
+    -moz-column-gap: 20px;
+    column-count: 5;
+    column-gap: 20px;
+    height: 600px;
+    overflow-y: scroll; }
+  #photoContainer #lightbox {
+    margin-top: -775px;
+    margin-left: 25%;
+    width: 50%;
+    position: absolute;
+    z-index: 5;
+    display: none;
+    background-color: #009b35; }
+    #photoContainer #lightbox #lightBoxImage {
+      border: solid;
+      border-color: #009b35;
+      width: 100%; }
+
+#lightboxlinkcont {
+  margin-left: 27%; }
+
+.lightboxlink {
+  margin-bottom: 15px; }
+
+.closebtn {
+  position: absolute;
+  top: -40px;
+  right: 10px;
+  font-size: 5em;
+  background: rgba(0, 0, 0, 0); }
+
+#overlay {
+  background: linear-gradient(to right, rgba(0, 12, 52, 0.8), rgba(0, 155, 53, 0.8));
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 4;
+  display: none; }
+
+#newsContainer {
+  width: 100%;
+  height: 750px;
+  background: url(../img/newsBackground.png);
+  background-size: cover;
+  margin-top: 10px;
+  color: white;
+  font-family: arimo-regular; }
+  #newsContainer #newsItems {
+    margin-top: 40px;
+    text-align: left; }
+    #newsContainer #newsItems #articleTitle {
+      font-size: 3em; }
+    #newsContainer #newsItems #newsImage {
+      width: 80%;
+      height: 400px;
+      background-color: white; }
+    #newsContainer #newsItems p {
+      margin-top: 20px;
+      font-size: 1.5em;
+      width: 85%; }
+
+#secondEmailBar {
+  border-style: solid;
+  width: 100%;
+  border-left: none;
+  border-right: none;
+  font-family: arimo-regular;
+  font-size: 1.2em; }
+  #secondEmailBar h3 {
+    font-family: catamaran-black;
+    font-size: 2em; }
+  #secondEmailBar form {
+    padding-top: 20px; }
+    #secondEmailBar form input {
+      height: 70px;
+      font-family: catamaran-black;
+      text-align: center; }
+
+footer {
+  width: 100%;
+  background-color: black;
+  height: 120px;
+  background: -webkit-linear-gradient(bottom right, #000c34, #13374b, #009b35);
+  background: -o-linear-gradient(bottom right, #000c34, #13374b, #009b35);
+  background: -moz-linear-gradient(bottom right, #000c34, #13374b, #009b35);
+  background: linear-gradient(bottom right, #000c34, #13374b, #009b35); }
+  footer #fadeLogo2 {
+    width: 5%;
+    margin-top: 25px;
+    margin-left: 5%;
+    height: 60px;
+    float: left; }
+  footer #facebookIcon {
+    margin-left: 27%; }
+  footer #footerNav {
+    margin-left: 17%;
+    margin-top: 15px;
+    font-family: arimo-regular; }
+    footer #footerNav ul li {
+      display: inline;
+      border-right: solid white;
+      margin-left: 5%; }
+      footer #footerNav ul li a {
+        color: white;
+        font-size: 1.3em;
+        padding-right: 5%; }
+    footer #footerNav ul #lastLink {
+      border-right: none; }
+
+#photos img {
+  width: 100% !important;
+  height: auto !important; }
+
+.bText {
+  color: white;
+  font-size: 3.2em;
+  font-family: catamaran-black;
+  text-align: center; }
+
+.hidden {
+  display: none; }
+
+.stat {
+  height: 170px;
+  border-style: solid;
+  border-color: white;
+  width: 95%;
+  margin: auto;
+  margin-top: 40px;
+  text-align: center;
+  color: white;
+  font-family: catamaran-black; }
+  .stat h3 {
+    font-size: 1.2em; }
+
+.changeling {
+  font-size: 1.6em;
+  margin-top: -30px;
+  font-family: arimo-regular; }
+
+.blueLine {
+  background-color: #04043c;
+  height: 15px;
+  float: left;
+  width: 15%; }
+
+.year {
+  width: 19%;
+  float: left;
+  margin-top: -75px;
+  font-family: catamaran-black;
+  font-size: 5.5em;
+  text-align: center;
+  color: #04043c; }
+
+.bookEndLine {
+  width: 5%; }
+
+#lastLine {
+  width: 8%; }
+
+.subheadBox {
+  width: 20%;
+  height: 65px;
+  background: rgba(255, 255, 255, 0.1);
+  float: left;
+  margin-left: 6.1%;
+  margin-right: 6.1%;
+  color: white;
+  text-align: center;
+  font-family: catamaran-black;
+  font-size: 1.9em;
+  padding: 4px 4px 4px 4px;
+  -moz-box-shadow: inset 2px 2px 2px rgba(0, 0, 0, 0.1), inset -2px -2px 2px rgba(255, 255, 255, 0.1);
+  -webkit-box-shadow: inset 2px 2px 2px rgba(0, 0, 0, 0.1), inset -2px -2px 2px rgba(255, 255, 255, 0.1);
+  box-shadow: inset 2px 2px 2px rgba(0, 0, 0, 0.1), inset -2px -2px 2px rgba(255, 255, 255, 0.1); }
+
+#prevYear:hover {
+  cursor: pointer; }
+
+#nextYear:hover {
+  cursor: pointer; }
+
+.banner {
+  width: 100%;
+  color: white;
+  background-color: #181818;
+  height: 80px;
+  text-align: center;
+  font-size: 3em;
+  padding-top: 5px;
+  margin-bottom: -10px;
+  border: solid white;
+  border-width: 1px;
+  border-left: none;
+  border-right: none; }
+
+.socialLink {
+  margin-top: 10px;
+  margin-left: 5%; }
+
+@media only screen and (max-width: 1022px) {
+  #videoContainer {
+    height: 600px;
+    width: 80%;
+    margin-left: 10%; }
+
+  video {
+    height: 400px;
+    margin-top: 50px;
+    margin-bottom: 25px;
+    width: 100%;
+    border: 14px double #181818;
+    border-radius: 1em; }
+
+  #controlsContainer {
+    width: 100%;
+    margin-left: 1%; }
+    #controlsContainer #playBt {
+      font-size: 1.7em; }
+    #controlsContainer #volDown {
+      font-size: 1.4em; }
+    #controlsContainer #volUp {
+      font-size: 1.7em; }
+    #controlsContainer #replay {
+      font-size: 1.5em; }
+
+  .controls {
+    background-color: #181818;
+    color: white;
+    border-radius: 3em;
+    width: 70%;
+    height: 50px;
+    margin-left: 15%;
+    border: solid;
+    border-color: #3a3a3a;
+    font-family: arimo-regular; }
+
+  .sidenav {
+    opacity: 1;
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    background: linear-gradient(to right, rgba(0, 12, 52, 0.9), rgba(0, 155, 53, 0.9));
+    overflow-x: hidden;
+    padding-top: 60px;
+    transition: 0.5s; }
+
+  .sidenav a {
+    text-align: center;
+    padding: 40px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 3em;
+    font-family: sans-serif;
+    color: white;
+    display: block;
+    transition: 0.3s; }
+
+  .sidenav a:hover, .offcanvas a:focus {
+    color: #009b35; }
+
+  .sidenav .closebtnNav {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px; }
+
+  #opener {
+    height: 80px;
+    width: 10%;
+    margin-left: 85%;
+    margin-top: 0%;
+    float: left; }
+
+  #splash #logoContainer {
+    padding-top: 40px; }
+    #splash #logoContainer #logo {
+      width: 80%;
+      margin-left: 20%; }
+
+  #emailBar h2 {
+    width: 25%;
+    color: white;
+    float: left;
+    font-size: 1.2em;
+    margin-top: 20px;
+    margin-left: 10px; }
+  #emailBar form {
+    float: left;
+    margin-top: -38px;
+    width: 70%;
+    margin-left: 30%; }
+    #emailBar form input {
+      background-color: #181818;
+      border-style: solid white;
+      border-radius: 10px;
+      text-align: center;
+      color: white; }
+    #emailBar form #button {
+      height: 40px; }
+    #emailBar form #button:hover {
+      cursor: pointer; }
+
+  #timelineContainer #stats {
+    color: black; }
+  #timelineContainer #timelineBanner #bannerInfo #teamT {
+    color: white;
+    font-size: 2.9em;
+    font-family: catamaran-black;
+    margin-left: 22%; }
+  #timelineContainer #timelineBanner #bannerInfo img {
+    width: 30%;
+    float: left;
+    margin-left: 65%;
+    margin-top: -95px; }
+  #timelineContainer #yearsContainer {
+    margin-top: 80px;
+    width: 100%; }
+    #timelineContainer #yearsContainer #mainYear {
+      color: white; }
+  #timelineContainer #verticalLine {
+    width: 15px;
+    height: 100px;
+    clear: left;
+    background-color: #04043c;
+    margin-left: 48%; }
+  #timelineContainer #yearText {
+    width: 80%;
+    margin-left: 10%;
+    color: white;
+    background: rgba(255, 255, 255, 0.1);
+    -moz-box-shadow: inset 2px 2px 2px rgba(0, 0, 0, 0.1), inset -2px -2px 2px rgba(255, 255, 255, 0.1);
+    -webkit-box-shadow: inset 2px 2px 2px rgba(0, 0, 0, 0.1), inset -2px -2px 2px rgba(255, 255, 255, 0.1);
+    box-shadow: inset 2px 2px 2px rgba(0, 0, 0, 0.1), inset -2px -2px 2px rgba(255, 255, 255, 0.1);
+    font-family: arimo-regular;
+    font-size: 1.7em;
+    text-align: center;
+    padding: 20px 20px 20px 20px; }
+    #timelineContainer #yearText #yearHeader {
+      color: #e8e661;
+      font-size: 1.7em; }
+
+  .stat {
+    height: 170px;
+    border-style: solid;
+    border-color: white;
+    width: 95%;
+    margin: auto;
+    margin-top: 40px;
+    text-align: center;
+    color: white;
+    font-family: catamaran-black; }
+    .stat h3 {
+      font-size: .9em; }
+
+  .changeling {
+    margin-top: -30px;
+    font-family: arimo-regular;
+    font-size: 1.3em; }
+
+  .blueLine {
+    width: 10%; }
+
+  .year {
+    width: 25%;
+    float: left;
+    margin-top: -75px;
+    font-family: catamaran-black;
+    font-size: 5.5em;
+    text-align: center;
+    color: #04043c; }
+
+  .bookEndLine {
+    width: 2%; }
+
+  #lastLine {
+    width: 3%; }
+
+  .subheadBox {
+    width: 25%;
+    height: 65px;
+    background: rgba(255, 255, 255, 0.1);
+    float: left;
+    margin-left: 4%;
+    margin-right: 4%;
+    color: white;
+    text-align: center;
+    font-family: catamaran-black;
+    font-size: 1.5em;
+    padding: 10px 4px 4px 4px; }
+
+  #newsContainer {
+    height: 600px; }
+    #newsContainer #newsItems {
+      margin-top: 20px;
+      text-align: left; }
+      #newsContainer #newsItems #articleTitle {
+        font-size: 2em; }
+      #newsContainer #newsItems #newsImage {
+        height: 300px; }
+      #newsContainer #newsItems p {
+        margin-top: 10px;
+        font-size: 1.2em;
+        width: 85%; }
+
+  #secondEmailBar {
+    font-size: 1em; }
+    #secondEmailBar h3 {
+      font-family: catamaran-black;
+      font-size: 2em; }
+    #secondEmailBar form {
+      padding-top: 20px; }
+      #secondEmailBar form input {
+        height: 70px;
+        font-family: catamaran-black;
+        text-align: center; } }
+@media only screen and (max-width: 768px) {
+  video {
+    width: 100%;
+    height: 430px; }
+
+  #splash {
+    height: 720px;
+    width: 100%;
+    margin-top: 80px;
+    background: url(../img/splashbackground.jpg);
+    background-size: cover; }
+    #splash #logoContainer {
+      margin-top: 40px; }
+      #splash #logoContainer #logo {
+        width: 65%;
+        margin-left: 35%; }
+    #splash #titleContainer {
+      height: 400px; }
+      #splash #titleContainer h2 {
+        font-family: catamaran-black;
+        font-size: 6em;
+        color: white;
+        text-shadow: 2px 2px 8px black; }
+      #splash #titleContainer p {
+        color: white;
+        font-family: arimo-regular;
+        font-size: 2.4em;
+        text-shadow: 2px 2px 8px black; }
+
+  #emailBar h2 {
+    width: 25%;
+    color: white;
+    float: left;
+    font-size: 1.3em;
+    margin-top: 10px;
+    margin-left: 20px; }
+  #emailBar form {
+    float: left;
+    margin-left: 25%;
+    margin-top: -60px;
+    width: 75%; }
+    #emailBar form input {
+      background-color: #181818;
+      border-style: solid white;
+      border-radius: 10px;
+      text-align: center;
+      color: white; }
+
+  #timelineContainer {
+    margin-top: 10px;
+    width: 100%;
+    height: 1700px;
+    background: -webkit-linear-gradient(top left, #000c34, #13374b, #009b35);
+    background: -o-linear-gradient(top left, #000c34, #13374b, #009b35);
+    background: -moz-linear-gradient(top left, #000c34, #13374b, #009b35);
+    background: linear-gradient(to top left, #000c34, #13374b, #009b35); }
+    #timelineContainer #timelineBanner {
+      font-size: .84em; }
+      #timelineContainer #timelineBanner #bannerInfo #teamT {
+        margin-left: 9%; }
+      #timelineContainer #timelineBanner #bannerInfo img {
+        margin-left: 55%;
+        margin-top: -80px; }
+
+  .stat h3 {
+    font-size: .65em;
+    margin-top: 20px; }
+
+  .changeling {
+    margin-top: -30px;
+    font-size: 1.6em; }
+
+  .year {
+    margin-top: -60px;
+    font-size: 4.3em; }
+
+  #lastLine {
+    width: 3%; }
+
+  .subheadBox {
+    font-size: 1.3em;
+    padding: 4px 4px 4px 4px; }
+
+  #photoContainer {
+    padding-top: 100px;
+    height: 600px; }
+    #photoContainer #lightbox {
+      margin-top: -725px;
+      margin-left: 15%;
+      width: 70%; }
+
+  footer {
+    height: 120px; }
+    footer #fadeLogo2 {
+      width: 8%; }
+    footer #facebookIcon {
+      margin-left: 27%; }
+    footer #footerNav ul li a {
+      font-size: 1em; } }
+@media only screen and (max-width: 600px) {
+  .sidenav {
+    opacity: 1;
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    background: linear-gradient(to right, rgba(0, 12, 52, 0.9), rgba(0, 155, 53, 0.9));
+    overflow-x: hidden;
+    padding-top: 60px;
+    transition: 0.5s; }
+
+  .sidenav a {
+    text-align: center;
+    padding: 40px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 3em;
+    font-family: sans-serif;
+    color: white;
+    display: block;
+    transition: 0.3s; }
+
+  .sidenav a:hover, .offcanvas a:focus {
+    color: #009b35; }
+
+  .sidenav .closebtnNav {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px; }
+
+  #opener {
+    height: 60px;
+    width: 10%;
+    margin-left: 40px;
+    margin-top: 80px; }
+
+  video {
+    width: 100%;
+    height: 310px; }
+
+  #splash {
+    height: 650px;
+    margin-top: 80px; }
+    #splash #logoContainer {
+      margin-top: 10px; }
+      #splash #logoContainer #logo {
+        width: 55%;
+        margin-left: 35%; }
+    #splash #titleContainer {
+      margin-top: 80px;
+      height: 300px; }
+      #splash #titleContainer h2 {
+        font-size: 5em; }
+      #splash #titleContainer p {
+        font-size: 2.4em; }
+
+  #emailBar h2 {
+    width: 24%;
+    font-size: 1.3em;
+    margin-top: 10px;
+    margin-left: 20px; }
+  #emailBar form {
+    margin-top: -60px;
+    width: 75%; }
+    #emailBar form input {
+      background-color: #181818;
+      border-style: solid white;
+      border-radius: 10px;
+      text-align: center;
+      color: white; }
+    #emailBar form #button {
+      height: 40px; }
+    #emailBar form #button:hover {
+      cursor: pointer; }
+
+  #timelineContainer #timelineBanner #bannerInfo img {
+    width: 30%;
+    float: left;
+    margin-left: 60%;
+    margin-top: -115px; }
+  #timelineContainer #yearsContainer #mainYear {
+    color: white; }
+  #timelineContainer #yearText {
+    width: 80%;
+    margin-left: 10%;
+    color: white;
+    background: rgba(255, 255, 255, 0.1);
+    -moz-box-shadow: inset 2px 2px 2px rgba(0, 0, 0, 0.1), inset -2px -2px 2px rgba(255, 255, 255, 0.1);
+    -webkit-box-shadow: inset 2px 2px 2px rgba(0, 0, 0, 0.1), inset -2px -2px 2px rgba(255, 255, 255, 0.1);
+    box-shadow: inset 2px 2px 2px rgba(0, 0, 0, 0.1), inset -2px -2px 2px rgba(255, 255, 255, 0.1);
+    font-family: arimo-regular;
+    font-size: 1.3em;
+    text-align: center;
+    padding: 20px 20px 20px 20px; }
+    #timelineContainer #yearText #yearHeader {
+      color: #e8e661;
+      font-size: 1.7em; }
+
+  .changeling {
+    font-size: 2em;
+    margin-top: -30px;
+    font-family: arimo-regular; }
+
+  .blueLine {
+    background-color: #04043c;
+    height: 15px;
+    float: left;
+    width: 12%; }
+
+  .year {
+    width: 19%;
+    margin-left: 1%;
+    margin-right: 1%;
+    float: left;
+    margin-top: -40px;
+    font-family: catamaran-black;
+    font-size: 3em;
+    text-align: center;
+    color: #04043c; }
+
+  .bookEndLine {
+    width: 5%; }
+
+  #lastLine {
+    width: 8%; }
+
+  .subheadBox {
+    font-size: 1.2em; }
+
+  .stat {
+    height: 170px;
+    border-style: solid;
+    border-color: white;
+    width: 95%;
+    margin: auto;
+    margin-top: 40px;
+    text-align: center;
+    color: white;
+    font-family: catamaran-black; }
+    .stat h3 {
+      font-size: 1em; }
+
+  #photoContainer {
+    margin-top: 10px;
+    background: url(../img/gallerybackground.jpg);
+    background-size: cover;
+    padding-top: 60px;
+    background-repeat: no-repeat;
+    height: 500px; }
+    #photoContainer #photos {
+      -webkit-column-gap: 10px;
+      -moz-column-gap: 10px;
+      column-gap: 10px;
+      height: 500px; }
+    #photoContainer #lightbox {
+      margin-top: -500px;
+      margin-left: 15%;
+      width: 70%; }
+      #photoContainer #lightbox #lightBoxImage {
+        border: solid;
+        border-color: green;
+        width: 100%;
+        margin-left: 0%;
+        width: 100%; }
+
+  #newsContainer {
+    height: 450px; }
+    #newsContainer #newsItems {
+      margin-top: 10px;
+      text-align: center; }
+      #newsContainer #newsItems #articleTitle {
+        font-size: 2em; }
+      #newsContainer #newsItems #newsImage {
+        width: 60%;
+        height: 250px;
+        background-color: white; }
+      #newsContainer #newsItems p {
+        margin-top: 5px;
+        text-align: left;
+        font-size: 1em;
+        width: 60%;
+        margin-left: 20%;
+        height: 100px;
+        overflow: scroll; }
+
+  .closebtn {
+    top: -20px;
+    font-size: 3em; }
+
+  #overlay {
+    top: 0;
+    left: 0; }
+
+  footer {
+    height: 100px; }
+    footer #fadeLogo2 {
+      width: 10%;
+      margin-top: 15px;
+      margin-left: 5%;
+      height: 40px;
+      float: left; }
+    footer #facebookIcon {
+      margin-left: 27%; }
+    footer #footerNav {
+      margin-left: 10%;
+      margin-top: 15px;
+      font-family: arimo-regular; }
+      footer #footerNav ul {
+        height: 5px; }
+        footer #footerNav ul li {
+          display: inline;
+          border-right: solid white;
+          margin-left: 5%; }
+          footer #footerNav ul li a {
+            color: white;
+            font-size: .9em;
+            padding-right: 5%; } }
+@media only screen and (max-width: 400px) {
+  header {
+    height: 60px; }
+
+  #splash {
+    height: 400px;
+    margin-top: 60px; }
+    #splash #logoContainer {
+      margin-top: 0px; }
+      #splash #logoContainer #logo {
+        width: 50%;
+        margin-left: 15%; }
+    #splash #titleContainer {
+      margin-top: 30px; }
+      #splash #titleContainer h2 {
+        font-size: 2.3em; }
+      #splash #titleContainer p {
+        font-size: 1em; }
+
+  #emailBar {
+    width: 100%;
+    background-color: #181818;
+    height: 70px;
+    border-top: solid white;
+    border-top-width: 0.5px;
+    border-bottom: solid white;
+    border-bottom-width: 0.5px; }
+    #emailBar h2 {
+      width: 25%;
+      color: white;
+      float: left;
+      font-size: .7em;
+      margin-top: 12px;
+      margin-left: 10px; }
+    #emailBar form {
+      float: left;
+      margin-left: 30%;
+      margin-top: -45px;
+      width: 75%; }
+      #emailBar form input {
+        background-color: #181818;
+        border-style: solid white;
+        border-radius: 10px;
+        text-align: center;
+        color: white;
+        font-size: .6em; }
+
+  #videoContainer {
+    height: 500px;
+    width: 90%;
+    margin-left: 5%; }
+
+  video {
+    height: 290px;
+    border: 10px double #181818; }
+
+  #controlsContainer {
+    margin-left: 2%; }
+    #controlsContainer #playBt {
+      font-size: 1.3em; }
+    #controlsContainer #volDown {
+      font-size: 1em; }
+    #controlsContainer #volUp {
+      font-size: 1.2em; }
+    #controlsContainer #replay {
+      font-size: 1.2em; }
+
+  .controls {
+    background-color: #181818;
+    color: white;
+    border-radius: 3em;
+    width: 85%;
+    height: 50px;
+    margin-left: 10%;
+    border: solid;
+    border-color: #3a3a3a;
+    font-family: arimo-regular; }
+
+  .banner {
+    height: 60px;
+    text-align: center;
+    font-size: 2em; }
+
+  #timelineContainer {
+    margin-top: 10px;
+    width: 100%;
+    height: 1000px;
+    background: -webkit-linear-gradient(top left, #000c34, #13374b, #009b35);
+    background: -o-linear-gradient(top left, #000c34, #13374b, #009b35);
+    background: -moz-linear-gradient(top left, #000c34, #13374b, #009b35);
+    background: linear-gradient(to top left, #000c34, #13374b, #009b35); }
+    #timelineContainer #timelineBanner {
+      background: url(../img/timelineBanner.png);
+      height: 200px;
+      width: 100%;
+      background-size: cover; }
+      #timelineContainer #timelineBanner #bannerInfo {
+        height: 170px;
+        margin-top: 15px;
+        background: rgba(255, 255, 255, 0.1); }
+        #timelineContainer #timelineBanner #bannerInfo #teamT {
+          color: white;
+          font-size: 1.3em;
+          font-family: catamaran-black;
+          margin-left: 22%; }
+        #timelineContainer #timelineBanner #bannerInfo img {
+          width: 30%;
+          float: left;
+          margin-left: 45%;
+          margin-top: -70px; }
+    #timelineContainer #yearsContainer {
+      margin-top: 80px;
+      width: 100%; }
+      #timelineContainer #yearsContainer #mainYear {
+        color: white; }
+    #timelineContainer #verticalLine {
+      width: 8px;
+      height: 60px;
+      clear: left;
+      background-color: #04043c;
+      margin-left: 48%; }
+    #timelineContainer #yearText {
+      height: 290px;
+      overflow: scroll;
+      font-size: 1em;
+      width: 90%;
+      margin-left: 5%;
+      text-align: center;
+      padding: 20px 20px 20px 20px; }
+      #timelineContainer #yearText #yearHeader {
+        color: #e8e661;
+        font-size: 1.7em; }
+
+  #photoContainer {
+    margin-top: 10px;
+    background: url(../img/gallerybackground.jpg);
+    background-size: cover;
+    padding-top: 100px;
+    height: 570px;
+    background-repeat: no-repeat; }
+    #photoContainer #photos {
+      line-height: 15px;
+      -webkit-column-count: 3;
+      -webkit-column-gap: 20px;
+      -moz-column-count: 3;
+      -moz-column-gap: 20px;
+      column-count: 3;
+      column-gap: 20px;
+      height: 350px;
+      overflow-y: scroll; }
+
+  #newsContainer {
+    height: 450px; }
+    #newsContainer #newsItems {
+      margin-top: 10px;
+      text-align: center; }
+      #newsContainer #newsItems #articleTitle {
+        font-size: 2em; }
+      #newsContainer #newsItems #newsImage {
+        width: 65%;
+        height: 250px;
+        background-color: white; }
+      #newsContainer #newsItems p {
+        margin-top: 5px;
+        text-align: left;
+        font-size: 1em;
+        width: 60%;
+        margin-left: 17%;
+        height: 100px;
+        overflow: scroll; }
+
+  .bText {
+    font-size: 1.65em; }
+
+  .stat {
+    height: 120px;
+    margin-top: 20px; }
+    .stat h3 {
+      font-size: .6em; }
+
+  .blueLine {
+    background-color: #04043c;
+    height: 7px;
+    float: left;
+    width: 5%; }
+
+  .year {
+    width: 19%;
+    float: left;
+    margin-top: -20px;
+    font-family: catamaran-black;
+    font-size: 1.7em;
+    margin-left: 3.25%;
+    margin-right: 3.25%; }
+
+  .subheadBox {
+    height: 55px;
+    font-size: .8em;
+    padding: 4px 4px 4px 4px; }
+
+  #secondEmailBar {
+    font-size: .4em;
+    padding-top: 7px; }
+    #secondEmailBar form {
+      padding-top: 10px; }
+      #secondEmailBar form input {
+        height: 50px; }
+
+  footer {
+    height: 80px; }
+    footer #fadeLogo2 {
+      width: 10%;
+      margin-top: 15px;
+      margin-left: 5%;
+      height: 40px;
+      float: left; }
+    footer #facebookIcon {
+      margin-left: 27%; }
+    footer #footerNav {
+      margin-left: 10%;
+      margin-top: 15px;
+      font-family: arimo-regular; }
+      footer #footerNav ul {
+        height: 5px; }
+        footer #footerNav ul li {
+          display: inline;
+          border-right: solid white;
+          margin-left: 5%; }
+          footer #footerNav ul li a {
+            color: white;
+            font-size: .7em;
+            padding-right: 3%; }
+        footer #footerNav ul #lastLink {
+          border-right: none; }
+
+  .socialLink {
+    margin-top: 10px;
+    width: 5%;
+    margin-left: 5%; }
+
+  .sidenav {
+    opacity: 1;
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    background: linear-gradient(to right, rgba(0, 12, 52, 0.9), rgba(0, 155, 53, 0.9));
+    overflow-x: hidden;
+    padding-top: 60px;
+    transition: 0.5s; }
+
+  .sidenav a {
+    text-align: center;
+    padding: 40px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 3em;
+    font-family: sans-serif;
+    color: white;
+    display: block;
+    transition: 0.3s; }
+
+  .sidenav a:hover, .offcanvas a:focus {
+    color: #009b35; }
+
+  .sidenav .closebtnNav {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px; }
+
+  #opener {
+    height: 40px;
+    width: 10%;
+    margin-top: 50px;
+    margin-left: 20px; }
+
+  .changeling {
+    font-size: 1.4em; } }
+
+/*# sourceMappingURL=app.css.map */
