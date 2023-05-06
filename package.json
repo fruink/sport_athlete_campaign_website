@@ -20,7 +20,7 @@
   "license": "MIT",
   "homepage": "https://bitbucket.org/xfolk5/officialize#readme",
   "devDependencies": {
-    "grunt": "^1.0.1",
+    "grunt": "^1.6.1",
     "grunt-contrib-uglify": "^3.3.0"
   }
 }
